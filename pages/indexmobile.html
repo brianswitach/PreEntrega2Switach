@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesdesktop.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Brian Switach - Versión Móvil</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="https://w7.pngwing.com/pngs/694/430/png-transparent-logo-brand-propiska-v-novosibirske-registratsiya-bs-text-trademark-rectangle.png" alt="Logo" style="width: 70px; height: 50px; border-radius: 50%; border: 2px solid #00BFFF;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/brianswitach/PreEntrega2Switach">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1 class="display-4">Bienvenido a la pagina web de Brian Switach</h1>
+            <p>En esta pagina web, podrás ver todo sobre Brian Switach como por ejemplo sus proyectos.</p>
+        </section>
+
+        <section class="container">
+            <h2 style="margin-top: 10px; margin-bottom: 30px;">Ultimos proyectos realizados</h2>
+            
+            <div class="row" style="margin-left: 105px;">
+                <div class="col-md-4">
+                    <div class="card mb-4 card-hover" style="width: 250px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD0TY1upPgkB01ZL4as9_x41rPGlionFJ-OKuHpze4lc6ZWI4VBovpF6arZr6pSat8q-o&usqp=CAU" class="card-img-top img-fluid" alt="Paisajes 1" style="width: 250px; height: 150px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Paisajes 1</h5>
+                            <p class="card-text">En este proyecto se pueden ver los mejores paisajes de Argentina.</p>
+                            <a href="https://github.com/brianswitach/PreEntrega2Switach" class="btn btn-outline-warning" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 card-hover" style="width: 250px;">
+                        <img src="https://www.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-250nw-407021107.jpg" class="card-img-top img-fluid" alt="Paisajes 2" style="width: 250px; height: 150px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Paisajes 2</h5>
+                            <p class="card-text">En este proyecto se pueden ver los mejores paisajes de Europa.</p>
+                            <a href="https://github.com/brianswitach/PreEntrega2Switach" class="btn btn-outline-success" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 card-hover" style="width: 250px;">
+                        <img src="https://jorgeguinazu.files.wordpress.com/2011/07/kahuak-may-11.jpeg" class="card-img-top img-fluid" alt="Paisajes 3" style="width: 250px; height: 150px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Paisajes 3</h5>
+                            <p class="card-text">En este proyecto se pueden ver los mejores paisajes de China.</p>
+                            <a href="https://github.com/brianswitach/PreEntrega2Switach" class="btn btn-outline-primary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="margin-top: 25px;">
+            <h2>Te gusto el armado de la pagina web?</h2>
+            <form id="opinionForm">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Dejanos tu opinion!</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-success" id="submitButton">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Derechos de autor &copy; 2023 de Brian Switach</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("opinionForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                document.getElementById("submitButton").textContent = "Enviado";
+                setTimeout(function() {
+                    document.getElementById("submitButton").textContent = "Enviar";
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
