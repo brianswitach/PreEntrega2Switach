@@ -1,6 +1,14 @@
 # PreEntrega2Switach
 
+
+
 Commit usados para actualizar/versionar el codigo: 
+
+commit b4149adb5602f5bb445de71df181d0a525a79e54
+Author: Brian Switach <brianswitach@Air-de-Brian.fibertel.com.ar>
+Date:   Tue Oct 24 19:31:51 2023 -0300
+
+    Cambios para la reentrega
 
 commit 65bd65f5e52f2ef1f958969b1e79dfbf8e6bf518 (HEAD -> main, origin/main)
 Author: Brian Switach
